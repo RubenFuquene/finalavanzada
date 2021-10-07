@@ -11,7 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import negocio.entidades.Empleado;
-import negocio.logica.Sesion;
+import negocio.logica.GestorGlobal;
 
 /**
  *
@@ -23,7 +23,7 @@ public class EmpleadoDAO
     private Connection conexionLocal;
     private PreparedStatement sentenciaAPreparar;
     
-    public void iniciarSesion(Sesion sesion)
+    public void iniciarSesion(GestorGlobal sesion)
     {
         ResultSet respuesta;
         
